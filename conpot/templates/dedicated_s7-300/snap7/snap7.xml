@@ -1,0 +1,35 @@
+<snap7 enabled="True" host="0.0.0.0" port="60102">
+    <system_status_lists>
+        <ssl id="001C" name="Component Identification">
+            <system_name id="0001">SystemName</system_name>
+            <module_name id="0002">SystemDescription</module_name>
+            <plant_ident id="0003">FacilityName</plant_ident>
+            <copyright id="0004">Copyright</copyright>
+            <serial id="0005">s7_id</serial>
+            <module_type_name id="0007">s7_module_type</module_type_name>
+        </ssl>
+        <ssl id="0011" name="Module Identification">
+            <!-- Not really sure what these are supposed to contain -->
+            <module_identification id="0001">
+                <content>s7_module_identification</content>
+                <version>s7_module_version</version>
+            </module_identification>
+            <hardware_identification id="0006">
+                <content>s7_hardware_identification</content>
+                <version>s7_hardware_version</version>
+            </hardware_identification>
+            <firmware_identification id="0007">
+                <content>s7_firmware_identification</content>
+                <version>s7_firmware_version</version>
+            </firmware_identification>
+        </ssl>
+    </system_status_lists>
+    <databases>
+        <database name="s7comm_db1">
+            <size>2</size>
+            <index>1</index>
+            <content>s7comm_db1</content>
+            <initial>1, 1</initial>
+        </database>
+    </databases>
+</snap7>
